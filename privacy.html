@@ -45,18 +45,18 @@
       margin-bottom: 48px;
     }
 
-    .wordmark {
-      font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
-      font-weight: 800;
-      font-size: 24px;
-      text-transform: lowercase;
-      color: var(--sn-text);
-      text-decoration: none;
+    .logo-link {
       display: inline-block;
+      text-decoration: none;
     }
 
-    .wordmark:hover {
-      color: var(--sn-teal);
+    .logo {
+      height: 32px;
+      width: auto;
+    }
+
+    .logo-link:hover .logo {
+      opacity: 0.8;
     }
 
     nav {
@@ -175,10 +175,11 @@
 <body>
   <div class="container">
     <header>
-      <a href="https://sugarnode.app" class="wordmark">sugarnode</a>
+      <a href="https://sugarnode.app" class="logo-link"><img src="/sugarnode_logo_color.png" alt="SugarNode" class="logo"></a>
       <nav>
         <a href="/terms">Terms of Service</a>
         <a href="/privacy" class="active">Privacy Policy</a>
+        <a href="/acknowledgments">Acknowledgments</a>
       </nav>
     </header>
 
@@ -294,7 +295,7 @@
       <h2>11. Contact Us</h2>
       <p>For privacy-related questions or requests, contact us at:</p>
       <ul>
-        <li>Email: <a href="mailto:privacy@sugarnode.app">privacy@sugarnode.app</a></li>
+        <li>Email: <a href="mailto:support@sugarnode.app">support@sugarnode.app</a></li>
         <li>Website: <a href="https://sugarnode.app">https://sugarnode.app</a></li>
       </ul>
 

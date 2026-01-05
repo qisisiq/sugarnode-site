@@ -1,5 +1,156 @@
-  Acknowledgments
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acknowledgments - SugarNode</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sn-bg: rgb(244, 241, 234);
+      --sn-surface: rgb(255, 255, 255);
+      --sn-text: rgb(17, 24, 39);
+      --sn-muted: rgb(71, 85, 105);
+      --sn-teal: rgb(92, 138, 146);
+      --sn-border: rgb(214, 207, 199);
+    }
 
-  This project was built using https://twinery.org, an open-source tool for creating interactive stories, and https://www.motoslave.net/sugarcube/2/, a story format created by Thomas Michael Edwards.
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  We're grateful to the developers and community behind these projects for making interactive storytelling accessible to everyone.
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--sn-bg);
+      color: var(--sn-text);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    ::selection {
+      background: rgba(172, 127, 188, 0.25);
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    header {
+      margin-bottom: 48px;
+    }
+
+    .logo-link {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .logo {
+      height: 32px;
+      width: auto;
+    }
+
+    .logo-link:hover .logo {
+      opacity: 0.8;
+    }
+
+    nav {
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--sn-muted);
+      text-decoration: none;
+      margin-right: 16px;
+    }
+
+    nav a:hover {
+      color: var(--sn-teal);
+    }
+
+    nav a.active {
+      color: var(--sn-text);
+      font-weight: 500;
+    }
+
+    h1 {
+      font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+      font-weight: 800;
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+
+    .content {
+      background: var(--sn-surface);
+      border: 1px solid var(--sn-border);
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--sn-text);
+    }
+
+    a {
+      color: var(--sn-teal);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      color: var(--sn-muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 32px 16px 64px;
+      }
+
+      .content {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="https://sugarnode.app" class="logo-link"><img src="/sugarnode_logo_color.png" alt="SugarNode" class="logo"></a>
+      <nav>
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/acknowledgments" class="active">Acknowledgments</a>
+      </nav>
+    </header>
+
+    <h1>Acknowledgments</h1>
+
+    <div class="content">
+      <p>This project was built using <a href="https://twinery.org">Twinery</a>, an open-source tool for creating interactive stories, and <a href="https://www.motoslave.net/sugarcube/2/">SugarCube</a>, a story format created by Thomas Michael Edwards.</p>
+
+      <p>We're grateful to the developers and community behind these projects for making interactive storytelling accessible to everyone.</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 SugarNode. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -45,18 +45,18 @@
       margin-bottom: 48px;
     }
 
-    .wordmark {
-      font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
-      font-weight: 800;
-      font-size: 24px;
-      text-transform: lowercase;
-      color: var(--sn-text);
-      text-decoration: none;
+    .logo-link {
       display: inline-block;
+      text-decoration: none;
     }
 
-    .wordmark:hover {
-      color: var(--sn-teal);
+    .logo {
+      height: 32px;
+      width: auto;
+    }
+
+    .logo-link:hover .logo {
+      opacity: 0.8;
     }
 
     nav {
@@ -181,10 +181,11 @@
 <body>
   <div class="container">
     <header>
-      <a href="https://sugarnode.app" class="wordmark">sugarnode</a>
+      <a href="https://sugarnode.app" class="logo-link"><img src="/sugarnode_logo_color.png" alt="SugarNode" class="logo"></a>
       <nav>
         <a href="/terms" class="active">Terms of Service</a>
         <a href="/privacy">Privacy Policy</a>
+        <a href="/acknowledgments">Acknowledgments</a>
       </nav>
     </header>
 
